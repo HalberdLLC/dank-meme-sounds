@@ -70,11 +70,13 @@ async function playSound(query) {
 // CLI mode for hooks and scripts: `npx dank-meme-sounds play "sad violin"`.
 if (process.argv[2] === 'play') {
   // Hooks must never fail loudly: report the problem and exit 0.
-  console.log(await playSound(process.argv.slice(3).join(' ') || 'vine boom').catch((e) => `dankmachine: ${e.message}`));
+  // Codex 'notify' appends a JSON payload as the last argument: ignore anything that looks like JSON.
+  const words = process.argv.slice(3).filter((a) => !/^\s*[{[]/.test(a));
+  console.log(await playSound(words.join(' ') || 'vine boom').catch((e) => `dankmachine: ${e.message}`));
   process.exit(0);
 }
 
-const server = new McpServer({ name: 'dank-meme-sounds', version: '0.3.1' });
+const server = new McpServer({ name: 'dank-meme-sounds', version: '0.3.2' });
 
 async function apiJson(p) {
   const r = await fetch(`${API}${p}`);

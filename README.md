@@ -80,6 +80,12 @@ command = "npx"
 args = ["-y", "dank-meme-sounds"]
 ```
 
+Play a sound when Codex finishes a turn (Codex appends a JSON payload; the CLI ignores it):
+
+```toml
+notify = ["npx", "-y", "dank-meme-sounds", "play", "vine boom"]
+```
+
 Requires Node.js 20+.
 
 ---
