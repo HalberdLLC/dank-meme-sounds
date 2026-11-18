@@ -1,0 +1,12 @@
+# Smithery: https://smithery.ai/docs/build/project-config
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      apiBase:
+        type: string
+        description: Catalog API base URL (optional)
+        default: https://dankmachine.com/api/v1
+  commandFunction: |-
+    (config) => ({ command: 'npx', args: ['-y', 'dank-meme-sounds'], env: { DANKMACHINE_API: config.apiBase || 'https://dankmachine.com/api/v1' } })

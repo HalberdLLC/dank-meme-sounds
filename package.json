@@ -1,0 +1,50 @@
+{
+  "name": "dank-meme-sounds",
+  "version": "0.3.1",
+  "description": "MCP server for DankMachine meme sounds: search, find reaction sounds for any moment, trending, and play them on your speakers. Remote version: https://dankmachine.com/mcp",
+  "type": "module",
+  "bin": {
+    "dank-meme-sounds": "index.mjs",
+    "dankmachine-mcp": "index.mjs"
+  },
+  "files": [
+    "index.mjs",
+    "play.mjs",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "meme",
+    "soundboard",
+    "sound effects",
+    "claude",
+    "mcp-server",
+    "sound-effects",
+    "memes",
+    "reaction",
+    "claude-code",
+    "hooks",
+    "cursor",
+    "ai-agents"
+  ],
+  "homepage": "https://dankmachine.com",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^3.25.0"
+  },
+  "mcpName": "io.github.TanKucukhas/dank-meme-sounds",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanKucukhas/dank-meme-sounds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TanKucukhas/dank-meme-sounds/issues"
+  }
+}
