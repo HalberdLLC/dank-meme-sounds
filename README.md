@@ -6,6 +6,7 @@ Your agent can **find the right sound for a moment** ("my code finally compiled"
 
 [![npm](https://img.shields.io/npm/v/dank-meme-sounds)](https://www.npmjs.com/package/dank-meme-sounds)
 [![MCP](https://img.shields.io/badge/MCP-remote%20%2B%20stdio-ff3db0)](https://dankmachine.com/developers/)
+[![Glama](https://glama.ai/mcp/servers/TanKucukhas/dank-meme-sounds/badges/score.svg)](https://glama.ai/mcp/servers/TanKucukhas/dank-meme-sounds)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 - 🔊 38k+ sounds, each with an MP3 URL and a sound page; the most popular ones have their own pixel-art icon
