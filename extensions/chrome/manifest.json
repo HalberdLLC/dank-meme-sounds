@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "DankMachine Meme Sounds",
+  "short_name": "DankMachine",
+  "version": "0.1.0",
+  "description": "38k meme sound buttons in your toolbar. Search, play, copy links, and find the right reaction sound for any text you select.",
+  "homepage_url": "https://dankmachine.com/",
+  "icons": { "128": "icon128.png" },
+  "action": { "default_popup": "popup.html", "default_title": "DankMachine meme sounds", "default_icon": { "128": "icon128.png" } },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "permissions": ["contextMenus", "storage"],
+  "host_permissions": ["https://dankmachine.com/*"]
+}

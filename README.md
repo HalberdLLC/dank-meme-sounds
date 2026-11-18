@@ -132,6 +132,10 @@ Sounds are cached in your temp folder after the first play, and the CLI never fa
 
 ---
 
+## Browser extension
+
+[extensions/chrome](extensions/chrome): a Chrome/Edge toolbar soundboard with search, trending, play, copy link, and right-click "Find a meme sound for this text". Load it unpacked or install the zip from Releases.
+
 ## REST API
 
 The same catalog is a free JSON API with CORS, no key:
