@@ -20,6 +20,14 @@ Your agent can **find the right sound for a moment** ("my code finally compiled"
 
 ## Quick start
 
+### Claude Code plugin (MCP server + meme-sounds skill, one step)
+
+```
+/plugin install dank-meme-sounds --marketplace TanKucukhas/dank-meme-sounds
+```
+
+Or add the marketplace first: `/plugin marketplace add TanKucukhas/dank-meme-sounds`, then `/plugin install dank-meme-sounds@dankmachine`. The skill teaches Claude when a sound fits and keeps `play_sound` for when you ask for it.
+
 ### Remote server (no install)
 
 ```bash

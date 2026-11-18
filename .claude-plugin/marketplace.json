@@ -1,0 +1,14 @@
+{
+  "name": "dankmachine",
+  "description": "DankMachine plugins: meme sound effects for Claude Code.",
+  "owner": { "name": "DankMachine", "url": "https://dankmachine.com" },
+  "plugins": [
+    {
+      "name": "dank-meme-sounds",
+      "source": "./",
+      "description": "Meme soundboard for Claude: find, search and play 38k meme sounds (MCP server + skill).",
+      "category": "fun",
+      "tags": ["memes", "sound-effects", "soundboard", "mcp"]
+    }
+  ]
+}

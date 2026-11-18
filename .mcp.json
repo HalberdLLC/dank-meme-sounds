@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "dankmachine": { "command": "npx", "args": ["-y", "dank-meme-sounds"] }
+  }
+}
