@@ -76,6 +76,38 @@ if (process.argv[2] === 'play') {
   process.exit(0);
 }
 
+// `npx dank-meme-sounds init [--project]`: adds sound hooks to Claude Code settings without touching other hooks.
+if (process.argv[2] === 'init') {
+  const project = process.argv.includes('--project');
+  const file = project ? path.join(process.cwd(), '.claude', 'settings.json') : path.join(os.homedir(), '.claude', 'settings.json');
+  const hooks = { Stop: 'vine boom', Notification: 'discord notification' };
+  let settings = {};
+  if (fs.existsSync(file)) {
+    const raw = fs.readFileSync(file, 'utf8');
+    try {
+      settings = raw.trim() ? JSON.parse(raw) : {};
+    } catch {
+      console.error(`${file} is not valid JSON; fix it first. Nothing was changed.`);
+      process.exit(1);
+    }
+    fs.writeFileSync(`${file}.bak`, raw);
+  }
+  settings.hooks ??= {};
+  const added = [];
+  for (const [event, sound] of Object.entries(hooks)) {
+    const groups = (settings.hooks[event] ??= []);
+    if (JSON.stringify(groups).includes('dank-meme-sounds')) continue;
+    groups.push({ hooks: [{ type: 'command', command: `npx -y dank-meme-sounds play "${sound}"` }] });
+    added.push(`${event} → ${sound}`);
+  }
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, `${JSON.stringify(settings, null, 2)}\n`);
+  console.log(added.length ? `Added to ${file}:\n  ${added.join('\n  ')}` : `Sound hooks already set in ${file}.`);
+  console.log('Change the words in quotes to any sound from https://dankmachine.com/claude-code-sounds/');
+  console.log('Enjoying it? ⭐ https://github.com/HalberdLLC/dank-meme-sounds');
+  process.exit(0);
+}
+
 const server = new McpServer({ name: 'dank-meme-sounds', version: '0.3.3' });
 
 async function apiJson(p) {

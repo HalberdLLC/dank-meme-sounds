@@ -192,7 +192,13 @@ Every result has the title, an `audio` MP3 URL, pixel-art `image` when available
 
 `npx dank-meme-sounds play "<anything>"` finds the best match and plays it. It caches after the first play, and it never fails a hook: no sound, no network, still exit 0.
 
-**Claude Code** (`~/.claude/settings.json`)
+**One command** adds a Stop hook (vine boom) and a Notification hook (Discord ping) to Claude Code, leaving your other hooks alone (`--project` writes `.claude/settings.json` instead):
+
+```bash
+npx -y dank-meme-sounds init
+```
+
+**Or by hand** in `~/.claude/settings.json`:
 
 ```json
 {
