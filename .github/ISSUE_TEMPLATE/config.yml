@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Upload a sound yourself
+    url: https://dankmachine.com/upload/
+    about: Uploads get pixel art and tags automatically.
+  - name: Copyright removal request
+    url: https://dankmachine.com/takedown/
+    about: Rights holders can request removal here.

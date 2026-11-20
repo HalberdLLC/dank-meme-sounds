@@ -1,0 +1,21 @@
+name: 🔊 Sound request
+description: A meme sound is missing or hard to find
+title: "Sound request: "
+labels: ["sound request"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Sound name
+      description: What people call it (e.g. "metal pipe falling")
+    validations:
+      required: true
+  - type: textarea
+    id: moment
+    attributes:
+      label: When is it used?
+      description: The moment or meme it belongs to. This helps agents pick it.
+  - type: input
+    id: link
+    attributes:
+      label: Where you heard it (optional)
