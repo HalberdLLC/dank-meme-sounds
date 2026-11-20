@@ -3,7 +3,7 @@
   "name": "com.dankmachine/dank-meme-sounds",
   "title": "DankMachine meme sounds",
   "description": "Meme soundboard for AI agents: 38k meme sounds. Find reaction sounds, search, trending, play.",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "websiteUrl": "https://dankmachine.com/developers/",
   "repository": {
     "url": "https://github.com/HalberdLLC/dank-meme-sounds",
@@ -13,7 +13,7 @@
     {
       "registryType": "npm",
       "identifier": "dank-meme-sounds",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "transport": {
         "type": "stdio"
       }

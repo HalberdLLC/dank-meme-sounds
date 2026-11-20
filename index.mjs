@@ -76,7 +76,7 @@ if (process.argv[2] === 'play') {
   process.exit(0);
 }
 
-const server = new McpServer({ name: 'dank-meme-sounds', version: '0.3.2' });
+const server = new McpServer({ name: 'dank-meme-sounds', version: '0.3.3' });
 
 async function apiJson(p) {
   const r = await fetch(`${API}${p}`);

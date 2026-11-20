@@ -1,6 +1,6 @@
 {
   "name": "dank-meme-sounds",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "MCP server for DankMachine meme sounds: search, find reaction sounds for any moment, trending, and play them on your speakers. Remote version: https://dankmachine.com/mcp",
   "type": "module",
   "bin": {
