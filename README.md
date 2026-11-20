@@ -140,6 +140,15 @@ args = ["-y", "dank-meme-sounds"]
 </details>
 
 <details>
+<summary><b>Gemini CLI</b></summary>
+
+```bash
+gemini extensions install https://github.com/HalberdLLC/dank-meme-sounds
+```
+
+</details>
+
+<details>
 <summary><b>Windsurf / Cline / Zed / anything else</b></summary>
 
 Remote:

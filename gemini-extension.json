@@ -1,0 +1,11 @@
+{
+  "name": "dank-meme-sounds",
+  "version": "0.3.3",
+  "description": "38,000+ meme sounds for Gemini CLI: find a reaction sound for any moment, search, trending.",
+  "mcpServers": {
+    "dank-meme-sounds": {
+      "httpUrl": "https://dankmachine.com/mcp"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
