@@ -8,7 +8,7 @@
     "url": "https://dankmachine.com"
   },
   "homepage": "https://dankmachine.com/developers/",
-  "repository": "https://github.com/TanKucukhas/dank-meme-sounds",
+  "repository": "https://github.com/HalberdLLC/dank-meme-sounds",
   "license": "MIT",
   "keywords": [
     "memes",
@@ -19,6 +19,6 @@
     "hooks"
   ],
   "icon": "./assets/logo.png",
-  "documentationUrl": "https://github.com/TanKucukhas/dank-meme-sounds#readme",
-  "supportUrl": "https://github.com/TanKucukhas/dank-meme-sounds/issues"
+  "documentationUrl": "https://github.com/HalberdLLC/dank-meme-sounds#readme",
+  "supportUrl": "https://github.com/HalberdLLC/dank-meme-sounds/issues"
 }
