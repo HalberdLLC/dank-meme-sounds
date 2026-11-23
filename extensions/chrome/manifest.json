@@ -1,13 +1,39 @@
 {
   "manifest_version": 3,
-  "name": "DankMachine Meme Sounds",
+  "name": "DankMachine: Meme Soundboard",
   "short_name": "DankMachine",
-  "version": "0.1.0",
-  "description": "38k meme sound buttons in your toolbar. Search, play, copy links, and find the right reaction sound for any text you select.",
+  "version": "0.2.0",
+  "description": "36,000 meme sound buttons in your toolbar. Search, describe a moment for the right reaction sound, press, save, copy the link.",
   "homepage_url": "https://dankmachine.com/",
-  "icons": { "128": "icon128.png" },
-  "action": { "default_popup": "popup.html", "default_title": "DankMachine meme sounds", "default_icon": { "128": "icon128.png" } },
-  "background": { "service_worker": "background.js", "type": "module" },
-  "permissions": ["contextMenus", "storage"],
-  "host_permissions": ["https://dankmachine.com/*"]
+  "action": {
+    "default_title": "DankMachine",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+D"
+      },
+      "description": "Open the DankMachine soundboard"
+    }
+  }
 }

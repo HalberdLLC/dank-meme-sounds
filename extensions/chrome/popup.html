@@ -1,34 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<style>
-  :root { color-scheme: dark; }
-  * { box-sizing: border-box; }
-  body { width: 340px; margin: 0; background: #0b0d12; color: #e6e9f2; font: 13px/1.3 system-ui, sans-serif; }
-  header { padding: 8px; border-bottom: 1px solid #ffffff14; display: flex; gap: 6px; align-items: center; }
-  header b { color: #ff3db0; font-size: 12px; letter-spacing: .05em; }
-  input { flex: 1; background: #121521; color: inherit; border: 1px solid #ffffff1f; border-radius: 8px; padding: 6px 8px; font: inherit; }
-  input:focus { outline: none; border-color: #ff3db0; }
-  #hint { padding: 6px 10px; color: #9aa3b8; font-size: 11px; }
-  ul { list-style: none; margin: 0; padding: 4px; max-height: 420px; overflow-y: auto; }
-  li { display: flex; align-items: center; gap: 8px; padding: 6px; border-radius: 8px; }
-  li:hover { background: #ffffff0a; }
-  img { width: 32px; height: 32px; image-rendering: pixelated; border-radius: 6px; background: #121521; flex: none; }
-  .t { flex: 1; min-width: 0; }
-  .t a { color: #e6e9f2; text-decoration: none; font-weight: 600; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .t small { color: #9aa3b8; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  button { background: none; border: 1px solid #ffffff1f; color: #e6e9f2; border-radius: 6px; padding: 3px 6px; cursor: pointer; font: inherit; }
-  button.play { background: #ff3db0; color: #000; border: 0; font-weight: 700; }
-  footer { padding: 6px 10px; border-top: 1px solid #ffffff14; font-size: 11px; color: #9aa3b8; }
-  footer a { color: #ffe14d; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>DankMachine</title>
+  <link rel="stylesheet" href="popup.css" />
 </head>
 <body>
-  <header><b>DANK</b><input id="q" placeholder="Search meme sounds… or describe a moment" autofocus /></header>
-  <div id="hint">Trending right now</div>
+  <header>
+    <img src="icons/icon-32.png" alt="" width="24" height="24" class="pixel" />
+    <h1>DankMachine</h1>
+    <a href="https://dankmachine.com/?ref=extension" target="_blank" rel="noopener" class="site">open site</a>
+  </header>
+  <label for="q" class="sr-only">Search meme sounds</label>
+  <input id="q" type="search" placeholder="bruh, vine boom, sad violin..." autocomplete="off" autofocus />
+  <nav id="tabs" aria-label="Lists">
+    <button type="button" data-tab="trending" aria-pressed="true">Trending</button>
+    <button type="button" data-tab="saved" aria-pressed="false">Saved</button>
+  </nav>
+  <p id="status" aria-live="polite"></p>
   <ul id="list"></ul>
-  <footer>38k sounds on <a href="https://dankmachine.com/" target="_blank">dankmachine.com</a> · <a href="https://dankmachine.com/packs/" target="_blank">sound packs</a></footer>
+  <footer>1-9 play the first nine. Shift+click copies the link. Right-click any text to find a sound for it.</footer>
   <script src="popup.js" type="module"></script>
 </body>
 </html>
