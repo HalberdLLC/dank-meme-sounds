@@ -252,7 +252,7 @@ Docs: **[dankmachine.com/developers](https://dankmachine.com/developers/)**. Ple
 
 ## 🧩 Browser extension
 
-[`extensions/chrome`](extensions/chrome): a Chrome/Edge toolbar soundboard with search, trending, play and copy link, plus right-click → **"Find a meme sound for this text"**. Grab the zip from [Releases](https://github.com/HalberdLLC/dank-meme-sounds/releases) and load it unpacked.
+[`extensions/chrome`](extensions/chrome): a Chrome/Edge toolbar soundboard: trending, search as you type or describe a moment for a fitting reaction sound, a synced Saved tab, 1-9 hotkeys, Shift+click to copy a link, and right-click → **"Find a meme sound for this text"**. Grab the zip from [Releases](https://github.com/HalberdLLC/dank-meme-sounds/releases) and load it unpacked.
 
 ## 🕹️ More from DankMachine
 
